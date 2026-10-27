@@ -1,0 +1,27 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Security – License Saver for Jira</title><meta name="description" content="How License Saver processes data: it runs entirely on Atlassian Forge and never sends data to the publisher."><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap"><a class="brand" href="../"><span class="logo">MA</span>Marouani Apps</a>
+<nav><a href="../">License Saver</a><a href="../privacy/">Privacy</a><a href="../security/">Security</a><a href="../terms/">Terms</a></nav></div></header><main><div class="wrap"><p class="eyebrow">License Saver for Jira</p>
+<h1>Security Policy</h1>
+<p class="meta">Last updated: 27 October 2026</p>
+<h2>Architecture</h2>
+<ul>
+<li>License Saver runs entirely on <strong>Atlassian Forge</strong>. Marouani Apps operates no servers, databases or third-party services for the app.</li>
+<li>All app data is stored in <strong>Atlassian Forge storage</strong> for the customer's installation. We have no access to it.</li>
+<li>The only outbound destination is <code>api.atlassian.com</code> (the Atlassian Administration API).</li>
+<li>The app's page is available only to Jira administrators.</li>
+</ul>
+<h2>Secrets</h2>
+<p>The organization API key provided by the customer's organization admin is stored with Forge's encrypted secret storage (<code>kvs.setSecret</code>), is never returned to the browser, and is never logged. Customers can revoke it at any time in Atlassian Administration → Settings → API keys.</p>
+<h2>Logging</h2>
+<p>Application logs (kept by Atlassian Forge) contain only technical information such as counts and status codes — no names, email addresses or account IDs.</p>
+<h2>Safety controls</h2>
+<ul>
+<li>Every suspend and restore is recorded in an in-app activity log with one-click restore.</li>
+<li>Automatic mode is off by default and limited to 25 users and 10% of users per day; new users, recently restored users and users with open assigned issues are skipped.</li>
+</ul>
+<h2>Reporting a vulnerability</h2>
+<p>Please email <a href="mailto:mohamedhabibmarouani8@gmail.com?subject=Security%20report%20-%20License%20Saver">mohamedhabibmarouani8@gmail.com</a> with the subject “Security report – License Saver”. We acknowledge reports within 2 business days, keep you informed while we investigate, and fix confirmed issues as a priority. Please don't publicly disclose an issue before we've had a chance to address it.</p>
+<h2>Incident response</h2>
+<p>If a security incident affects customer data, we will notify affected customers and Atlassian without undue delay, in line with the Atlassian Marketplace Partner Agreement and applicable law (including GDPR).</p>
+</div></main><footer><div class="wrap"><span>© 2026 Marouani Apps · Messina, Italy</span><span><a href="mailto:mohamedhabibmarouani8@gmail.com">mohamedhabibmarouani8@gmail.com</a></span></div></footer></body></html>
