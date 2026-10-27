@@ -1,0 +1,30 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy – License Saver for Jira</title><meta name="description" content="How License Saver processes data: it runs entirely on Atlassian Forge and never sends data to the publisher."><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap"><a class="brand" href="../"><span class="logo">MA</span>Marouani Apps</a>
+<nav><a href="../">License Saver</a><a href="../privacy/" class="active">Privacy</a><a href="../terms/">Terms</a></nav></div></header><main><div class="wrap"><p class="eyebrow">License Saver for Jira</p>
+<h1>Privacy Policy &amp; Data Handling</h1>
+<p class="meta">Last updated: 27 October 2026</p>
+<p>License Saver (“the app”) is an Atlassian Forge app published by <strong>Marouani Apps (Mohamed Habib Marouani)</strong> (“we”, “us”). This policy explains what data the app processes, where it is stored and how to delete it.</p>
+<div class="callout"><strong>In short</strong><ul>
+<li>The app runs <strong>entirely on Atlassian’s Forge platform</strong>. We operate no servers, and your data is <strong>never sent to us</strong>.</li>
+<li>Data is stored only in Atlassian’s Forge storage for your installation.</li>
+<li>The app communicates only with Atlassian’s own APIs (your Jira site and api.atlassian.com).</li>
+<li>No third-party analytics, tracking or advertising.</li></ul></div>
+<h2>1. Data the app processes</h2><table><thead><tr><th>Data</th><th>Why</th><th>Source</th></tr></thead><tbody><tr><td>User account IDs, display names, email addresses</td><td>Show who is inactive</td><td>Atlassian Administration API</td></tr><tr><td>Last-active dates per app; date added to the organization</td><td>Decide who is inactive and protect new users</td><td>Atlassian Administration API</td></tr><tr><td>Paid app seats per user (role assignments)</td><td>Calculate potential savings</td><td>Atlassian Administration API</td></tr><tr><td>Number of unresolved issues assigned to an inactive user</td><td>Warn before suspending someone with open work</td><td>Jira REST API</td></tr><tr><td>Settings (thresholds, prices, excluded domains)</td><td>Apply your rules</td><td>Entered by your admin</td></tr><tr><td>Organization ID and organization API key</td><td>Call the Atlassian Administration API on your behalf</td><td>Entered by your admin</td></tr><tr><td>Activity log (suspensions and restores)</td><td>Audit trail and one-click restore</td><td>Created by the app</td></tr></tbody></table>
+<p>The app does <strong>not</strong> read issue contents, comments, attachments, Confluence pages or any other work data.</p>
+<h2>2. Where data is stored</h2>
+<p>All data is stored in <strong>Atlassian Forge storage</strong> for your installation, hosted by Atlassian and covered by Atlassian’s security and data-residency commitments for Forge. The organization API key is stored as an <strong>encrypted Forge secret</strong>; it is never shown again in the app and never sent to the browser. We, the publisher, have no access to your stored data.</p>
+<h2>3. Data sent outside your site</h2>
+<p>The app makes outbound requests only to <code>api.atlassian.com</code> (the Atlassian Administration API), using the API key you provided. No data is sent anywhere else.</p>
+<h2>4. Retention and deletion</h2>
+<ul><li>Scan results are replaced by the next scan.</li><li>The activity log keeps the most recent 500 actions.</li>
+<li>You can revoke the stored API key at any time in Atlassian Administration → Settings → API keys.</li>
+<li>When you uninstall the app, Atlassian deletes its Forge storage according to its Forge data-retention rules.</li></ul>
+<h2>5. Actions the app can take</h2>
+<p>The app suspends or restores user access only when an administrator clicks Suspend or Restore, or when an administrator has turned on automatic mode (limited to 25 users per day and never more than 10% of users, skipping users with open issues, new users and recently restored users). Every action is logged and can be reversed. The app’s page is available only to Jira administrators.</p>
+<h2>6. Sub-processors</h2><p>Atlassian Pty Ltd (hosting through the Forge platform). No other sub-processors.</p>
+<h2>7. Your rights (GDPR)</h2>
+<p>Your organization is the data controller. Atlassian processes the data on the Forge platform. Because we cannot access your data, requests to access or delete personal data are handled by your Atlassian administrator (for example by running a new scan, removing users or uninstalling the app). For any question, contact us below.</p>
+<h2>8. Contact</h2><p>Marouani Apps (Mohamed Habib Marouani)<br>Messina, Italy<br><a href="mailto:mohamedhabibmarouani8@gmail.com">mohamedhabibmarouani8@gmail.com</a></p>
+<h2>9. Changes</h2><p>We will update this page if the app’s data handling changes and show the new date at the top.</p>
+</div></main><footer><div class="wrap"><span>© 2026 Marouani Apps · Messina, Italy</span><span><a href="mailto:mohamedhabibmarouani8@gmail.com">mohamedhabibmarouani8@gmail.com</a></span></div></footer></body></html>
